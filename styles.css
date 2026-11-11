@@ -15,7 +15,7 @@ header, main, footer {
 }
 
 h1 {
-    color: #1a5276;
+    color: #265572;
 }
 
 h2, h3 {
@@ -31,3 +31,6 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
+h1 { text-align: center; color: red}
+
