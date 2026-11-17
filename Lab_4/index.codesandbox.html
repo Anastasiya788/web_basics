@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HTML + CSS</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Моя перша HTML-форма</h1>
+
+    <form action="https://httpbin.org/get" method="get">
+      <p>
+        <strong>Ваші улюблені напої?</strong><br />
+        <label>
+          <input type="checkbox" name="drinks" value="coffee" /> Кава </label
+        ><br />
+        <label> <input type="checkbox" name="drinks" value="tea" /> Чай </label
+        ><br />
+        <label>
+          <input type="checkbox" name="drinks" value="juice" /> Сік </label
+        ><br />
+        <label>
+          <input type="checkbox" name="drinks" value="water" /> Вода
+        </label>
+      </p>
+
+      <p>
+        <strong>Моя національність</strong><br />
+        <label>
+          <input type="radio" name="nationality" value="ukrainian" />
+          Українець</label
+        ><br />
+        <label>
+          <input type="radio" name="nationality" value="polish" /> Поляк </label
+        ><br />
+        <label>
+          <input type="radio" name="nationality" value="other" /> Інша
+        </label>
+      </p>
+      <p>
+        <label for="user-name">Ім'я:</label>
+        <input type="text" id="user-name" name="name" />
+      </p>
+
+      <p>
+        <label for="birth-date">Дата народження:</label>
+        <input type="date" id="birth-date" name="birthday" />
+      </p>
+
+      <p>
+        <label>
+          Імейл:
+          <input type="email" name="email" />
+        </label>
+      </p>
+
+      <p>
+        <label for="user-message">Повідомлення:</label>
+        <textarea
+          id="user-message"
+          name="message"
+          rows="3"
+          cols="25"
+        ></textarea>
+      </p>
+
+      <p>
+        <button type="submit">Надіслати</button>
+        <button type="reset">Очистити</button>
+      </p>
+    </form>
+    <picture>
+      <source
+        media="(max-width: 467px)"
+        srcset="https://picsum.photos/id/15/300/500"
+      />
+      <img src="https://picsum.photos/id/28/1000/400" alt="Краєвид природи" />
+    </picture>
+  </body>
+</html>
